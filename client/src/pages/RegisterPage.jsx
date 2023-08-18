@@ -72,7 +72,12 @@ export default function registerPage() {
         {errors.phone && (
           <p className="text-red-500">Usuario es requerido</p>
         )}
-        <button type="submit">Registrarse</button>
+        <button
+            type="submit"
+            className="bg-blue-800 text-white px-4 py-2 rounded-md"
+          >
+            Registrarse
+          </button>
       </form>
     </div>
     </div>
