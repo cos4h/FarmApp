@@ -8,6 +8,7 @@ import cors from 'cors';
 const App = express();
 
 App.use(cors({
+  origin: 'https://sistema-de-costos.onrender.com',
   credentials: true
 }));
 App.use(morgan("dev"));
