@@ -21,7 +21,8 @@ export default function registerPage() {
     singup(values);
   };
   return (
-    <div className="flex h-[calc(100vh-100px)] items-center justify-center">
+    <div className="register">
+      <div className="flex h-[calc(100vh-100px)] items-center justify-center">
       <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
       {
         registerErrors.map((error, index) => (
@@ -79,6 +80,7 @@ export default function registerPage() {
             Registrarse
           </button>
       </form>
+    </div>
     </div>
     </div>
   );

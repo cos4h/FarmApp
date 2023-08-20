@@ -6,7 +6,6 @@ export default function BillFormPage() {
   const { createBill } = useBills();
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
     createBill(data);
   });
   return (

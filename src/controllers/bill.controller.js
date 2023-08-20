@@ -10,7 +10,7 @@ export const getBills = async (req, res) => {
 export const createBill = async (req, res) => {
   const { name, description, quantity, price, date } = req.body;
 
-  console.log(name);
+  
   const newBill = new Bill({
     name,
     description,
@@ -20,6 +20,7 @@ export const createBill = async (req, res) => {
     user: req.user.id
   });
 
+  
   const savedBill = await newBill.save();
   res.json(savedBill);
 };

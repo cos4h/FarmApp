@@ -7,6 +7,7 @@ import BillFormPage from './pages/BillFormPage';
 import ProfilePage from './pages/ProfilePage';
 import BillsPage from './pages/BillsPage';
 import { BillProvider } from './context/BillsContext.jsx';
+import Navbar from './components/Navbar.jsx';
 
 import ProtectedRoute from './ProtectedRoute';
 
@@ -15,6 +16,7 @@ export default function App() {
     <AuthProvider>
       <BillProvider>
         <BrowserRouter>
+          <Navbar />
           <Routes>
             <Route path= "/" element={<HomePage />} />
             <Route path= "/login" element={<LoginPage />} />

@@ -13,5 +13,7 @@ export const createBillSchema = z.object({
   price: z.number({
     required_error: 'price is required'
   }),
-  date: z.string().datetime().optional(),
+  date: z.string().datetime(),
 })
+
+

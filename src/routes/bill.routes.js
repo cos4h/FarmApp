@@ -13,7 +13,7 @@ import { createBillSchema } from "../schemas/bill.schema.js";
 
 const router = Router();
 
-router.get("/bill", authRequired, getBills);
+router.get("/bills", authRequired, getBills);
 router.get("/bill/:id", authRequired, getBill);
 router.post(
   "/bill",
