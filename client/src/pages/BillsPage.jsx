@@ -8,10 +8,10 @@ export default function BillsPage() {
     getBills();
   }, []);
 
-  if(bills.length === 0) return (<h1>No hay Facturas</h1>);
+  if(bills.length === 0) return (<h1 >No hay Facturas</h1>);
 
   return (
-    <div>
+    <div className='bills'>
       {
         bills.map((bill) => (
           <div key={bill._id}>
